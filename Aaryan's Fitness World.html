@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaryan's Fitness World</title>
-</head>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<style>
+<link href="Aaryan's%20Fitness%20World_files/css2.css" rel="stylesheet"><link rel="stylesheet" href="Aaryan's%20Fitness%20World_files/style.css"><style>
     /* CSS Reset */
     body {
         font-family: 'Lobster', cursive;
@@ -77,7 +73,7 @@
         color: white;
         text-decoration: none;
         /* it removes the line under the names */
-        padding: 34px 18px;
+        padding: 34px 23px;
     }
 
     .navbar li a:hover,
@@ -133,13 +129,16 @@
         margin: 21px auto;
         border-radius: 15px;
     }
-</style>
+</style></head>
+
+
+
 
 <body>
     <header class="header">
         <!-- left box for logo -->
         <div class="left">
-            <img src="img/logo.jpg" alt="">
+            <img src="Aaryan's%20Fitness%20World_files/logo.jpg" alt="">
             <div>Aaryan's Fitness</div>
         </div>
         <!-- mid box for navigation -->
@@ -181,8 +180,7 @@
                 <input type="text" name="" placeholder="Enter your Email Id">
             </div>
             <button class="btn">Submit</button>
-            <div class="btn"
-                style="background-color: blueviolet;width: 55px;font-family: 'Lobster', cursive;text-align: center;margin: 0px 9px;">
+            <div class="btn" style="background-color: blueviolet;width: 55px;font-family: 'Lobster', cursive;text-align: center;margin: 0px 9px;">
                 <input type="Reset" name="Reset Now">
             </div>
 
@@ -191,6 +189,43 @@
 
 
     </div>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 
-</html>
+</body></html>
